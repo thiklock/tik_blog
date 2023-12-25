@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# tik_blog
-=======
 # This is Tik's Blog in DJANGO
 
 -- pip3 install Django
@@ -17,4 +14,5 @@ python manage.py startapp blog
 -- creatges post in models.py of blog
 
 -- python manage.py migrate blog
->>>>>>> 3375778 (git init)
+-- python manage.py migrate
+-- python manage.py createsuperuser
