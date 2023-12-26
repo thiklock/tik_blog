@@ -35,3 +35,4 @@ class CommentTests(TestCase):
         self.assertEqual(comment.body, "This is a test comment.")
         self.assertEqual(comment.post, post)
         self.assertEqual(str(comment), "John Doe on 'Test Post'")
+
