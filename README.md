@@ -17,4 +17,6 @@ python manage.py startapp blog
 -- python manage.py migrate
 -- python manage.py createsuperuser
 
-CI DC:https://medium.com/intelligentmachines/github-actions-end-to-end-ci-cd-pipeline-for-django-5d48d6f00abf
+CI CD:https://medium.com/intelligentmachines/github-actions-end-to-end-ci-cd-pipeline-for-django-5d48d6f00abf
+
+Trying to GIT HUB ACTIONS
