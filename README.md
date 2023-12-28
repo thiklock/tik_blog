@@ -1,0 +1,1 @@
+First Version as of: https://realpython.com/build-a-blog-from-scratch-django/
