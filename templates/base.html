@@ -1,17 +1,67 @@
-<!-- templates/base.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>The Blog of Tik</title>
+  <meta charset="utf-8">
+  <title>DataTerm // Access Granted</title>
+
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <style>
+    body {
+      font-family: 'Hack', monospace; /* Font for gritty terminal vibes */
+      background-color: black;
+      color: #00F0FF; /* Electric cyan for that neural link glow */
+      text-shadow: 0 0 5px #000040; /* Glitchy shadow for data corruption aesthetic */
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', cursive; /* Bold, futuristic font */
+      font-weight: 300;
+      color: #FF00FF; /* Hot pink for that braindance vibe */
+      text-shadow: 0 0 10px #FF0040; /* More glitch, more style */
+    }
+
+    a {
+      color: #F0FF00; /* Acid green for toxic vibes */
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #A0BF00;
+      text-shadow: 0 0 5px #004000;
+    }
+
+    hr {
+      border-color: #004000; /* Darker green for contrast */
+      border-top-width: 2px;
+      margin: 10px 0;
+      opacity: 0.8; /* Slightly transparent for depth */
+    }
+
+    body:after {
+      background-image: url("glitch_cityscape.gif"); /* Animated glitch background for extra grit */
+      background-size: cover;
+      background-position: center;
+      animation: glitch 5s linear infinite; /* Add a subtle glitch animation */
+    }
+
+    @keyframes glitch {
+      0% { opacity: 0.5; }
+      50% { opacity: 1; }
+      100% { opacity: 0.5; }
+    }
+  </style>
 </head>
 <body>
-<h1>The Blog of Tik</h1>
-<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-<a href="{% url "blog_index" %}">Home</a>
-<hr>
-{% block page_title %}{% endblock page_title %}
-{% block page_content %}{% endblock page_content %}
+  <header>
+    <h1>DataTerm // Unauthorized Access</h1>
+    <nav>
+      <a href="#">Jack In</a>
+      <a href="#">Black ICE</a>
+      <a href="#">Deep Dive</a>
+    </nav>
+  </header>
+  <hr>
+  {% block page_title %}{% endblock page_title %}
+  {% block page_content %}{% endblock page_content %}
 </body>
 </html>
