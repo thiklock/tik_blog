@@ -2,6 +2,8 @@
 
 from django.shortcuts import render
 from blog.models import Post, Comment
+from django.http import HttpResponse
+import subprocess
 
 def blog_index(request):
     posts = Post.objects.all().order_by("-created_on")
@@ -30,4 +32,11 @@ def blog_detail(request, pk):
 
     return render(request, "blog/detail.html", context)
 
-print('This is it')
+
+def streamlit_app(request):
+    # Run the Streamlit app as a subprocess
+    result = subprocess.run(["streamlit", "run", "path/to/streamlit_app.py"], capture_output=True, text=True)
+    streamlit_output = result.stdout
+
+    # Display the Streamlit output in a Django template
+    return render(request, 'streamlit_app.html', {'streamlit_output': streamlit_output})
