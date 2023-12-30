@@ -10,6 +10,8 @@ from django.shortcuts import render
 import streamlit as st
 from io import StringIO
 import sys
+from django.http import HttpResponse
+import subprocess
 
 def blog_index(request):
     posts = Post.objects.all().order_by("-created_on")
